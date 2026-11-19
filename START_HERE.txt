@@ -1,0 +1,21 @@
+START HERE
+
+1. Create a NEW empty GitHub repository.
+2. Upload these files into the repository root:
+   app.py
+   requirements.txt
+   README.md
+   START_HERE.txt
+   .gitignore
+3. In Streamlit Community Cloud, create a new app from this repository.
+4. Main file path: app.py
+5. Deploy. No broker token or trading permission is required.
+6. In the app, select market, timeframe, lookback, risk:reward and SL buffer.
+7. Click Download Data & Analyse.
+
+BTC Spot = Binance public data.
+BTC Perpetual = Binance Futures with Bybit fallback.
+XAUUSD = Yahoo Finance XAUUSD=X, with GC=F futures fallback if spot ticker is unavailable.
+GC=F is not identical to spot gold.
+
+Signals are based on candle close and entry on next candle open. This is historical testing, not financial advice.
