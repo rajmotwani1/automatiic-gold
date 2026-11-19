@@ -1,21 +1,13 @@
 START HERE
 
-1. Create a NEW empty GitHub repository.
-2. Upload these files into the repository root:
-   app.py
-   requirements.txt
-   README.md
-   START_HERE.txt
-   .gitignore
-3. In Streamlit Community Cloud, create a new app from this repository.
-4. Main file path: app.py
-5. Deploy. No broker token or trading permission is required.
-6. In the app, select market, timeframe, lookback, risk:reward and SL buffer.
-7. Click Download Data & Analyse.
+1. Open your GitHub repository.
+2. Replace the existing app.py with this updated app.py.
+3. Replace requirements.txt with this updated requirements.txt.
+4. README.md and START_HERE.txt are also updated; .gitignore can remain the same.
+5. Commit the changes and wait for Streamlit Community Cloud to redeploy.
+6. Open the app and choose BTC Spot, BTC Perpetual or XAUUSD.
+7. Automatic 5m + 15m mode is selected by default. Select lookback, Risk:Reward and SL buffer.
+8. Auto update is ON by default; the scanner performs its first analysis on load and refreshes every 60 seconds. You can turn it OFF any time.
+9. Use Manual timeframe mode if you want the original 1m/3m/30m/1H/2H/3H/4H selection.
 
-BTC Spot = Binance public data.
-BTC Perpetual = Binance Futures with Bybit fallback.
-XAUUSD = Yahoo Finance XAUUSD=X, with GC=F futures fallback if spot ticker is unavailable.
-GC=F is not identical to spot gold.
-
-Signals are based on candle close and entry on next candle open. This is historical testing, not financial advice.
+Data feeds: Binance Spot, Binance Futures with Bybit Linear fallback, and Yahoo Finance XAUUSD=X with GC=F futures fallback. No broker token or trading permission is required.
